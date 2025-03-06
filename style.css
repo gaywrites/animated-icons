@@ -1,35 +1,30 @@
-/* Diagnostic Styling */
-* {
-  outline: 2px dotted gray;
-} 
-
-/* temp background color */
-body {
-    background: lightgray;
-}
-  
-/* vertical and horizontal centering */
 body {
   display: grid;
   place-content: center;
   height: 100vh;
+  scale: 1;
+  background: black;
+}
+#ball {
+  fill: red;
 }
 
-/* containers */
-main {
-  display: flex;
-}
-
-/* cptionally changef */
-main section {
-  height: 100px;
-  width: 100px;
-}
-
-/* scale SVG to fit container */
 svg {
-  width: 100%; /* or any specific size */
-  height: auto;
-  /* Center and fit */
-  preserveAspectRatio: xMidYMid meet;
+  background-color: black; 
 }
+
+:not(.radioWave) {
+  stroke: white;
+  stroke-width: 5px; /* Adjust thickness as needed */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none; /* Keeps shapes unfilled unless otherwise needed */
+}
+
+.radioWave {
+  stroke: #f6ff00;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+ }
